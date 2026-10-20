@@ -16,3 +16,13 @@ src/
 ├── App.css
 ├── index.css
 └── main.jsx
+```
+
+## Instalação das dependências
+
+```text
+cd dashboard-financas
+npm install
+npm install recharts
+npm run dev
+```
