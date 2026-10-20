@@ -1,0 +1,140 @@
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 30px;
+}
+
+header {
+  margin-bottom: 30px;
+}
+
+header h1 {
+  color: #1e293b;
+  margin-bottom: 8px;
+}
+
+header p {
+  color: #64748b;
+}
+
+.resumo {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 25px;
+}
+
+.card, .bloco {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px #00000010;
+}
+
+.card h3 {
+  color: #64748b;
+  margin-bottom: 12px;
+}
+
+.card h2 {
+  font-size: 26px;
+}
+
+.receita {
+  color: #16a34a;
+}
+
+.despesa {
+  color: #dc2626;
+}
+
+.saldo {
+  color: #4f46e5;
+}
+
+.painel {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 25px;
+}
+
+.bloco h2 {
+  margin-bottom: 20px;
+  color: #1e293b;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input, select {
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 15px;
+  width: 100%;
+}
+
+label {
+  font-weight: 500;
+}
+
+button {
+  padding: 12px;
+  background: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #4338ca;
+}
+
+.grafico {
+  width: 100%;
+  min-height: 300px;
+}
+
+.tabela-container {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 14px;
+  text-align: left;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+th {
+  background: #f8fafc;
+}
+
+.excluir {
+  background: #dc2626;
+  padding: 8px 12px;
+}
+
+.excluir:hover {
+  background: #b91c1c;
+}
+
+@media (max-width: 768px) {
+  .resumo, .painel {
+    grid-template-columns: 1fr;
+  }
+
+  .container {
+    padding: 15px;
+  }
+}
